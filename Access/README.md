@@ -6,21 +6,28 @@ Access is an &quot;easy&quot; difficulty machine, that highlights how machines a
 We started scanning with nmap:
 
  We got 3 ports open 21, 23, 80
+
 <p align="center">
-Launch the utility: <br/>
-<img src="https://imgur.com/a/uyLkBTz" height="96%" width="80%" alt="Disk Sanitization Steps"/>
+Nmap Scan results: <br/>
+<img src="https://i.imgur.com/381fTLi.png" height="80%" width="80%" alt="nmap results"/>
 <br />
 <br />
 
-PORT 80: The site doesn’t have much except giving us an image.
-
-![2024-03-02 23_58_52-kali-linux-2023.3-vmware-amd64 - VMware Workstation 17 Player (Non-commercial us.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d6875430-eb14-42e7-8063-9f491f29c465/60ba0d72-56ba-49e6-b638-06220f0169c8/2024-03-02_23_58_52-kali-linux-2023.3-vmware-amd64_-_VMware_Workstation_17_Player_(Non-commercial_us.png)
+ 
+PORT 80: The site's default page, this doesn’t have much except give us an image
+<p align="center">
+<img src="https://i.imgur.com/DWSVRlc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
 
 **Directory Busting:**
 
-I used **dirsearch** tool but none of the directories found are working.
+I used the **dirsearch** tool but no interesting directories found!
+<p align="center">
+<img src="https://i.imgur.com/CJ2czS1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
 
-![2024-03-02 23_57_46-kali-linux-2023.3-vmware-amd64 - VMware Workstation 17 Player (Non-commercial us.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d6875430-eb14-42e7-8063-9f491f29c465/2a0af248-7028-490c-a5c7-bd97890fe8f6/2024-03-02_23_57_46-kali-linux-2023.3-vmware-amd64_-_VMware_Workstation_17_Player_(Non-commercial_us.png)
 
 **FTP Port 21:**
 
