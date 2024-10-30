@@ -7,7 +7,7 @@ We started scanning with nmap:
 
  We got 3 ports open 21, 23, 80
 
-![2024-03-02 23_56_33-kali-linux-2023.3-vmware-amd64 - VMware Workstation 17 Player (Non-commercial us.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d6875430-eb14-42e7-8063-9f491f29c465/3f1b9847-c864-4b0a-bfc0-2c7708ef3e3e/2024-03-02_23_56_33-kali-linux-2023.3-vmware-amd64_-_VMware_Workstation_17_Player_(Non-commercial_us.png)
+<img src="https://imgur.com/a/uyLkBTz" height="80%" width="80%" alt="Nmap scan results"/>
 
 PORT 80: The site doesn’t have much except giving us an image.
 
