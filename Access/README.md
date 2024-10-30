@@ -6,8 +6,11 @@ Access is an &quot;easy&quot; difficulty machine, that highlights how machines a
 We started scanning with nmap:
 
  We got 3 ports open 21, 23, 80
-
-<img src="https://imgur.com/a/uyLkBTz" height="80%" width="80%" alt="Nmap scan results"/>
+<p align="center">
+Launch the utility: <br/>
+<img src="https://imgur.com/a/uyLkBTz" height="96%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
 
 PORT 80: The site doesn’t have much except giving us an image.
 
