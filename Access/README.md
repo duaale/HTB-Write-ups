@@ -33,9 +33,11 @@ I used the **dirsearch** tool but no interesting directories found!
 
 I’ve checked the FTP port 21, logged in as “anonymous”. Found two directories sitting there. Looked into both and got backup.mdb in Backups directory and Access Control.zip under Engineer directory. I’ve transferred both into my local files.
 
-![2024-03-02 23_54_15-kali-linux-2023.3-vmware-amd64 - VMware Workstation 17 Player (Non-commercial us.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d6875430-eb14-42e7-8063-9f491f29c465/a651ccc9-f243-40ed-bec3-42bd56719f62/2024-03-02_23_54_15-kali-linux-2023.3-vmware-amd64_-_VMware_Workstation_17_Player_(Non-commercial_us.png)
-
-![2024-03-02 23_52_11-kali-linux-2023.3-vmware-amd64 - VMware Workstation 17 Player (Non-commercial us.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d6875430-eb14-42e7-8063-9f491f29c465/81a5ce8f-89eb-40ca-a0e7-b13a14b927f8/2024-03-02_23_52_11-kali-linux-2023.3-vmware-amd64_-_VMware_Workstation_17_Player_(Non-commercial_us.png)
+<p align="center">
+<img src="https://i.imgur.com/RYXh41f.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ <img src="https://i.imgur.com/I9omKol.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
 
 ### Extracting credentials from backup.mdb
 
@@ -53,11 +55,19 @@ apt-get install mdbtools
 mdb-tables backup.mdb
 ```
 
-![reading mdb file.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d6875430-eb14-42e7-8063-9f491f29c465/53b7f945-6002-4e7d-8d0d-b83ca4a2d045/reading_mdb_file.png)
+<p align="center">
+<img src="https://i.imgur.com/VgzyoN9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-We used **While loop** to execute and read the table in **backup.mdb** file in a **Bash** script. This gives us human readable format.
+<br />
+<br />
 
-![bash loop.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d6875430-eb14-42e7-8063-9f491f29c465/ac86cb91-5a09-471c-9967-53b36a6c7143/bash_loop.png)
+ We used **While loop** to execute and read the table in **backup.mdb** file in a **Bash** script. This gives us human readable format.
+
+<p align="center">
+<img src="https://i.imgur.com/6Iuv6Td.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<br />
+<br />
 
 We found an interesting table named ‘**auth-user**’ and we will use mdb-export to get the content of the table:
 
